@@ -18,3 +18,13 @@ function kunaiBack(event) {
     kunaiLeft.style.left = n + "px"
 
 }
+
+// let naruto = document.querySelector('#naruto')
+// naruto.addEventListener("click", link)
+
+// function link() {
+
+//     naruto.innerHTML = `<a href="index.html">naruto</a>`
+//     console.log(naruto)
+// }
+// // let url = naruto.textContent.trim()

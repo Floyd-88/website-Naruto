@@ -1,0 +1,92 @@
+.cards__persones-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards__persones-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards__persones-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__person img {
+    height: 15rem;
+    cursor: pointer;
+    /* transition: .3s ease transform; */
+}
+
+
+/* .card__person img:hover {
+    transform: scale(1.2);
+} */
+
+.foto__person img {
+    transition: .3s ease transform;
+}
+
+.foto__person img:hover {
+    transform: scale(1.2);
+}
+
+.name__person {
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.infoPerson {
+    display: none;
+    position: fixed;
+    width: 30rem;
+    height: 35rem;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    color: yellow;
+    background: linear-gradient(0deg, rgb(99, 97, 128), rgb(172, 70, 70), rgb(26, 26, 24));
+    box-shadow: 4px 4px 8px 0px rgb(34 60 80);
+    z-index: 9999;
+}
+
+.infoPerson_foto {
+    padding: 1rem;
+}
+
+.infoPerson_info {
+    padding: 1rem;
+}
+
+.infoPerson_close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: url(img/icons/closes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.cover_div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9000;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
