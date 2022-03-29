@@ -1,0 +1,89 @@
+header {
+    z-index: 1000;
+}
+
+
+/* Ð’Ñ‹Ð¿Ð°Ð´Ð°ÑŽÑ‰Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº */
+
+.amv__option {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+select {
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    outline: none;
+    color: #462f3d;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999;
+    background: #eee;
+    cursor: pointer;
+}
+
+
+/* Select arrow styling */
+
+.amv__option .myarrow {
+    width: 27px;
+    height: 25px;
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    right: 3px;
+    background: url("img/arrow_down.png") right / 90% no-repeat #eee;
+    pointer-events: none;
+}
+
+
+/* Ð’Ð¸Ð´ÐµÐ¾ 1 */
+
+.amv__my_videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    /* padding-bottom: 2rem; */
+    position: relative;
+    /* margin: 0 -5rem; */
+}
+
+.amv__video {
+    display: flex;
+    cursor: pointer;
+    flex: 0 0 33.333%;
+    margin-bottom: 3rem;
+}
+
+.border_bt {
+    border-bottom: 3px solid darkorange;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+    height: 2rem;
+    opacity: 0.5;
+}
+
+
+/* Ð’Ð¸Ð´ÐµÐ¾ 2 */
+
+#other_video {
+    display: none;
+}
+
+
+/* .border_bt_2y {
+    border-bottom: 3px solid darkorange;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+    height: 3rem;
+    opacity: 0.5;
+} */

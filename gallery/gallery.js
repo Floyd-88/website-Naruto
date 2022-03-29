@@ -37,9 +37,8 @@ document.body.addEventListener("click", smallSizeImg)
 function bigSizeImg(event) {
     if (!event.target.closest("img")) return
     window.cancelAnimationFrame(stop)
-        // event.target.classList.add("big_foto")
     event.target.style.transform = "none"
-    event.target.style.width = 100 + "%";
+        // event.target.style.width = 100 + "%";
     event.target.style.height = 95 + "vh";
     event.target.style.position = "absolute";
     event.target.style.top = -200 + "px";
@@ -53,12 +52,6 @@ function bigSizeImg(event) {
 function smallSizeImg(event) {
     if (event.target.contains(section) || event.target.contains(containerMain)) {
         window.requestAnimationFrame(yGo)
-
-        // img.style.width = 30 + "vw";
-        // img.style.height = 50 + "vh";
-        // img.style.position = "";
-        // img.style.zIndex = 0;
-
         container.style.overflow = "hidden"
         console.log(img)
         document.body.addEventListener("click", bigSizeImg)
@@ -67,7 +60,7 @@ function smallSizeImg(event) {
 
 function yGo() {
     waveSrc.forEach((i) => {
-        i.style.top = `${y -= 0.05}px`
+        i.style.top = `${y -= 0.07}px`
     })
     stop = window.requestAnimationFrame(yGo);
 }
