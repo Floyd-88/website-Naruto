@@ -18,6 +18,7 @@ function showCard(e) {
     infoPerson.style.top = (document.documentElement.clientHeight) - (infoPerson.getBoundingClientRect().height) - 20 + "px"
     infoPerson.style.left = (document.documentElement.clientWidth / 2) - (infoPerson.getBoundingClientRect().width / 2) + "px"
 
+
     // Кнопка закрытия окна
     let close = document.createElement("div")
     close.classList.add("infoPerson_close")
@@ -30,6 +31,5 @@ function showCard(e) {
         cover_div.classList.remove("cover_div")
         infoPerson.style.display = ""
         close.style.display = ""
-
     }
 }

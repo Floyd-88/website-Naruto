@@ -1,0 +1,130 @@
+h3 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    color: darkorange;
+    transition: .3s;
+    display: inline-block;
+}
+
+h3:hover {
+    color: rgb(156, 86, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.map {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 70vw;
+    margin: 0;
+    height: 95vh;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#result {
+    height: 5%;
+    margin: 1rem;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    color: cornsilk;
+    font-weight: 600;
+}
+
+#mapX {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.map_world {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.map__naru {
+    width: 8%;
+    height: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+}
+
+.map__naru img {
+    width: 100%;
+    height: 100%;
+}
+
+.feels {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22rem;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.feels img {
+    width: 100%;
+}
+
+.feels p {
+    color: crimson;
+    font-size: 28px;
+    margin: 0;
+    font-family: cursive;
+    font-weight: 600;
+    background-color: black;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#naruto_agree {
+    display: none;
+    width: 45rem;
+}
+
+#naruto_shock {
+    display: none;
+}
+
+#naruto_win {
+    display: none;
+}
+
+.infoPerson_close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: url(../heros/img/icons/closes.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    background-color: #853530;
+    ;
+}
