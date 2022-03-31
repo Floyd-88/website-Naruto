@@ -23,11 +23,7 @@
             .card__person img {
                 height: 15rem;
                 cursor: pointer;
-                /* transition: .3s ease transform; */
             }
-            /* .card__person img:hover {
-    transform: scale(1.2);
-} */
             
             .foto__person img {
                 transition: .3s ease transform;
@@ -64,13 +60,18 @@
                 padding: 1rem;
             }
             
-            .infoPerson img {
-                width: 19rem;
+            .infoPerson_foto img {
+                cursor: auto;
+                height: 19rem;
             }
             
             .infoPerson_info {
-                padding: 1rem;
+                padding: 0 1rem 1rem 1rem;
                 font-size: 21px;
+            }
+            
+            .infoPerson_info p {
+                margin: 0;
             }
             
             .infoPerson_close {
@@ -116,9 +117,8 @@
             @media (max-width: 900px) {
                 .cards__persones-2 {
                     border: 1px solid;
-                    overflow: visible;
+                    overflow-x: clip;
                     position: relative;
-                    overflow: hidden;
                 }
                 .carouse_2 {
                     transition: .5s;
@@ -150,15 +150,15 @@
                 }
                 .infoPerson {
                     position: fixed;
-                    left: 50%;
-                    top: 56%;
-                    transform: translate(-50%, -50%);
+                    /* top: 0;
+                    left: 25%; */
                     width: 22rem;
-                }
-                .infoPerson img {
-                    width: 17rem;
+                    height: 30rem;
                 }
                 .infoPerson_info {
                     font-size: 19px;
+                }
+                .main-hero {
+                    margin-top: 0;
                 }
             }
