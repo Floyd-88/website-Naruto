@@ -28,3 +28,15 @@ function kunaiBack(event) {
 //     console.log(naruto)
 // }
 // // let url = naruto.textContent.trim()
+
+
+//Меню бургер откывается/закрывается
+
+let menu = document.querySelector("#menu")
+let header_menu_box = document.querySelector(".header_menu_box")
+menu.addEventListener("click", showMenu)
+
+function showMenu() {
+    header_menu_box.classList.toggle('trans_menu');
+
+}
