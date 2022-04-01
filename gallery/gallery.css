@@ -51,7 +51,7 @@
  
  @media (max-width: 900px) {
      .wrapper__gallery img {
-         height: 40vh;
+         height: 50vh;
      }
      .bigImg {
          height: auto !important;

@@ -1,83 +1,74 @@
-header {
-    z-index: 1000;
-}
-
-
-/* Ð’Ñ‹Ð¿Ð°Ð´Ð°ÑŽÑ‰Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº */
-
-.amv__option {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 3rem;
-}
-
-select {
-    display: inline-block;
-    height: 30px;
-    width: 150px;
-    outline: none;
-    color: #462f3d;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px #999;
-    background: #eee;
-    cursor: pointer;
-}
-
-
-/* Select arrow styling */
-
-.amv__option .myarrow {
-    width: 27px;
-    height: 25px;
-    position: absolute;
-    display: inline-block;
-    top: 3px;
-    right: 3px;
-    background: url("img/arrow_down.png") right / 90% no-repeat #eee;
-    pointer-events: none;
-}
-
-
-/* Ð’Ð¸Ð´ÐµÐ¾ 1 */
-
-.amv__my_videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 5rem;
-    /* padding-bottom: 2rem; */
-    position: relative;
-    /* margin: 0 -5rem; */
-}
-
-.amv__video {
-    display: flex;
-    cursor: pointer;
-    flex: 0 0 33.333%;
-    margin-bottom: 3rem;
-}
-
-.border_bt {
-    border-bottom: 3px solid darkorange;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    width: 70%;
-    margin-left: -35%;
-    height: 2rem;
-    opacity: 0.5;
-}
-
-
-/* Ð’Ð¸Ð´ÐµÐ¾ 2 */
-
-#other_video {
-    display: none;
-}
-
-
-/* .border_bt_2y {
+        header {
+            z-index: 1000;
+        }
+        /* Ð’Ñ‹Ð¿Ð°Ð´Ð°ÑŽÑ‰Ð¸Ð¹ ÑÐ¿Ð¸ÑÐ¾Ðº */
+        
+        .amv__option {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+        
+        select {
+            display: inline-block;
+            height: 30px;
+            width: 150px;
+            outline: none;
+            color: #462f3d;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px #999;
+            background: #eee;
+            cursor: pointer;
+        }
+        /* Select arrow styling */
+        
+        .amv__option .myarrow {
+            width: 27px;
+            height: 25px;
+            position: absolute;
+            display: inline-block;
+            top: 3px;
+            right: 3px;
+            background: url("img/arrow_down.png") right / 90% no-repeat #eee;
+            pointer-events: none;
+        }
+        /* Ð’Ð¸Ð´ÐµÐ¾ 1 */
+        
+        .amv__my_videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 5rem;
+            /* padding-bottom: 2rem; */
+            position: relative;
+            /* margin: 0 -5rem; */
+        }
+        
+        .amv__video {
+            display: flex;
+            cursor: pointer;
+            flex: 0 0 25%;
+            margin-bottom: 3rem;
+            padding: 1rem;
+        }
+        
+        .border_bt {
+            border-bottom: 3px solid darkorange;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 70%;
+            margin-left: -35%;
+            height: 2rem;
+            opacity: 0.5;
+        }
+        /* Ð’Ð¸Ð´ÐµÐ¾ 2 */
+        
+        #other_video {
+            display: none;
+        }
+        /* .border_bt_2y {
     border-bottom: 3px solid darkorange;
     position: absolute;
     top: 100%;
@@ -87,3 +78,64 @@ select {
     height: 3rem;
     opacity: 0.5;
 } */
+        
+        .prev,
+        .next {
+            display: none;
+        }
+        
+        @media (max-width: 750px) {
+            .amv__video {
+                flex: 0 0 40%;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .wrapper {
+                padding: 0 1rem 0 1rem;
+            }
+            .amv {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .amv__option {
+                margin-bottom: 1ren;
+            }
+            .amv__my_videos {
+                flex-direction: column;
+            }
+            .amv__video {
+                flex: 0 0 100%;
+            }
+            .amv__video video {
+                flex: 0 0 100%;
+            }
+            .prev,
+            .next {
+                display: block;
+                cursor: pointer;
+                position: absolute;
+                top: 40%;
+                width: auto;
+                margin: -27px;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+            }
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            .main-hero {
+                margin: 0;
+                padding: 2rem;
+                font-size: 29px;
+            }
+        }

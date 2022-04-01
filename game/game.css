@@ -27,6 +27,7 @@ h3:hover {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    z-index: 1000;
 }
 
 #result {
@@ -119,12 +120,36 @@ h3:hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 99990;
     background: url(../heros/img/icons/closes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
     background-color: #853530;
-    ;
+}
+
+@media (max-width: 837px) {
+    .map {
+        height: auto;
+        width: 90vh;
+    }
+}
+
+@media (max-width: 670px) {
+    .map {
+        width: 80vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .map {
+        width: auto;
+    }
+}
+
+@media (max-width: 527px) {
+    .header_menu {
+        z-index: 1001;
+    }
 }

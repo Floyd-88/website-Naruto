@@ -25,7 +25,7 @@ function createImg() {
 
         //Присваем 3м переменным случайное значение в диапозоне
         x = getRandomInRange(-800, window.screen.width - 700);
-        y = getRandomInRange(500, -1000);
+        y = getRandomInRange(1000, -1000);
         z = getRandomInRange(300, 2000);
 
         //Размещаем картинки
@@ -45,7 +45,7 @@ function createImgUp() {
 
         //Присваем 3 переменным случайное значение в диапозоне
         xU = getRandomInRange(100, window.screen.width - 100);
-        yU = getRandomInRange(-11500, -12000);
+        yU = getRandomInRange(-15000, -16500);
         zU = getRandomInRange(300, 2000);
 
         //Размещаем картинки
@@ -148,6 +148,7 @@ function yUp() {
     })
     animationDown = window.requestAnimationFrame(yUp);
 }
+
 yGo()
 yUp()
 createImg()
