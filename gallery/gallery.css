@@ -1,20 +1,74 @@
-body {
-    margin: 0;
-    overflow: hidden;
-}
-
-.wrapper__gallery {
-    transform-style: preserve-3d;
-    margin: 0;
-    overflow: hidden;
-    perspective: 1200px;
-    height: 100vh;
-    width: 100%;
-}
-
-.wrapper__gallery img {
-    transform-origin: center;
-    box-shadow: 0 0 12px 12px rgb(0 0 0 / 40%);
-    position: relative;
-    height: 50vh;
-}
+ body {
+     margin: 0;
+     overflow: hidden;
+ }
+ 
+ .wrapper__gallery {
+     transform-style: preserve-3d;
+     margin: 0;
+     overflow: hidden;
+     perspective: 1200px;
+     height: 100vh;
+     width: 100%;
+ }
+ 
+ .wrapper__gallery img {
+     transform-origin: center;
+     box-shadow: 0 0 12px 12px rgb(0 0 0 / 40%);
+     position: relative;
+     height: 50vh;
+ }
+ 
+ .bigImg {
+     cursor: pointer !important;
+     width: 100vw;
+     height: 100% !important;
+     position: fixed !important;
+     z-index: 100000;
+     top: 0 !important;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     margin: auto !important;
+     opacity: 1 !important;
+ }
+ 
+ .infoPerson_close {
+     width: 40px;
+     height: 40px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 999999;
+     background: url(../heros/img/icons/closes.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     cursor: pointer;
+     background-color: rgba(204, 195, 193, 0.39);
+ }
+ /* Медиа запросы */
+ 
+ @media (max-width: 900px) {
+     .wrapper__gallery img {
+         height: 40vh;
+     }
+     .bigImg {
+         height: auto !important;
+     }
+ }
+ 
+ @media (max-width: 600px) {
+     .wrapper__gallery img {
+         width: 100%;
+         margin: 1rem;
+     }
+ }
+ 
+ @media (max-width: 450px) {
+     .wrapper__gallery img {
+         width: 100%;
+         margin: 1rem;
+         height: 12rem;
+     }
+ }
