@@ -53,10 +53,10 @@ for (elemBtnRight of arrow_2) {
     elemBtnRight.addEventListener("click", rightCards)
 }
 
-function leftCards(e) {
+function rightCards(e) {
     e.target.parentElement.firstElementChild.style.transform = `translate(${e.target.parentElement.firstElementChild.dataset.value -= 5}rem, 0rem)`
 }
 
-function rightCards(e) {
+function leftCards(e) {
     e.target.parentElement.firstElementChild.style.transform = `translate(${e.target.parentElement.firstElementChild.dataset.value = +e.target.parentElement.firstElementChild.dataset.value + 5}rem, 0rem)`
 }
