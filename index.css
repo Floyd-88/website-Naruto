@@ -1,7 +1,7 @@
     /* ------------------------------------------------------------------------------------------- */
     
     body {
-        background-image: linear-gradient(180deg, rgb(255 255 255 / 70%), rgb(255 255 255 / 80%)), url(https://static.zerochan.net/NARUTO.full.1785595.jpg);
+        background-image: linear-gradient(180deg, rgba(31, 29, 29, 0.5), rgba(13, 12, 12, 0.7)), url(img/wallpaper.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background: linear-gradient(to right, #853530, #000000);
+        background: linear-gradient(to right, #b6b6b6, #000000);
         flex-direction: column;
         z-index: 1000;
     }
@@ -217,7 +217,7 @@
     }
     
     .description {
-        color: darkorange;
+        color: floralwhite;
         font-size: 19px;
         line-height: 1.4;
     }
